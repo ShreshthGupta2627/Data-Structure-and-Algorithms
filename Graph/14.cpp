@@ -39,7 +39,7 @@ int cntDistinctIsland(vector<vector<int>> &grid)
             {
                 vector<pair<int, int>> p;
                 dfs(i, j, vis, grid, p, i, j);
-                st.insert(p);
+                st.insert(p);   
             }
         }
     }

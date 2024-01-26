@@ -13,7 +13,7 @@ int solve(int tar, int ind, vector<int> &den)
     }
     int notpick = 0 + solve(tar, ind - 1, den);
     int pick = 1e9;
-    if (den[ind] <= tar) 
+    if (den[ind] <= tar)
         pick = 1 + solve(tar - den[ind], ind, den);
     return min(pick, notpick);
 }

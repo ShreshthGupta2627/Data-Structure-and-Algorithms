@@ -11,7 +11,7 @@ public:
         int vis[n + 1] = {0};
         vis[0] = 1;
         queue<int> q;
-        q.push(1);
+        q.push(0);
         vector<int> bfs;
         while (!q.empty())
         {
